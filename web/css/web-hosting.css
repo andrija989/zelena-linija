@@ -1,0 +1,606 @@
+@font-face {
+  font-family: title-font;
+  src: url("../fonts/TitilliumWeb/TitilliumWeb-Black.ttf"); }
+@font-face {
+  font-family: title-font-bold;
+  src: url("../fonts/TitilliumWeb/TitilliumWeb-Bold.ttf"); }
+@font-face {
+  font-family: content-title-font;
+  src: url("../fonts/Montserrat/MONTSERRAT-BLACK.TTF"); }
+@font-face {
+  font-family: content-font;
+  src: url("../fonts/Montserrat/MONTSERRAT-REGULAR.TTF"); }
+@font-face {
+  font-family: content-font-bold;
+  src: url("../fonts/Montserrat/MONTSERRAT-BOLD.TTF"); }
+@font-face {
+  font-family: content-font-light;
+  src: url("../fonts/Montserrat/MONTSERRAT-LIGHT.TTF"); }
+.site-wrapper {
+  background-color: #fdfcfc;
+  background-image: url("/images/bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-family: content-font; }
+  .site-wrapper > header {
+    position: relative; }
+  .site-wrapper .site-content {
+    background-color: transparent;
+    position: relative;
+    padding: 50px 0px 0px 0px;
+    overflow: hidden;
+    width: 100%; }
+    .site-wrapper .site-content .content-wrapper {
+      max-width: 1920px;
+      margin: 0px auto;
+      text-align: center;
+      padding-bottom: 1px; }
+      .site-wrapper .site-content .content-wrapper section.cloud-hosting {
+        max-width: 1600px;
+        height: 600px;
+        margin: auto; }
+        .site-wrapper .site-content .content-wrapper section.cloud-hosting header.cloud-hosting-header {
+          text-transform: uppercase;
+          font-family: title-font;
+          font-size: 48px;
+          font-weight: bolder;
+          padding: 20px;
+          margin-bottom: 50px; }
+        .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content {
+          padding: 0px 0px 20px 0px;
+          margin-bottom: 50px; }
+          @media only screen and (min-width: 991px) {
+            .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content .row {
+              display: flex;
+              width: 100%; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content .row [class*="col-"] article.cloud-hosting-item {
+                position: relative;
+                height: calc(100% - 45px);
+                max-width: 400px;
+                padding-bottom: 75px; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content .row [class*="col-"] article.cloud-hosting-item footer.item-footer {
+                  position: absolute;
+                  left: 0px;
+                  bottom: 10px;
+                  width: 100%; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content .row [class*="col-"] article.cloud-hosting-item:hover {
+                  height: calc(100% - 5px); } }
+          .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item {
+            border: 1px #e4e4e4 solid;
+            border-top: 3px #e5f3f6 solid;
+            padding: 20px 42px;
+            position: relative;
+            top: 0px;
+            margin-bottom: 45px; }
+            .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header {
+              border-bottom: solid 1px #ebebeb;
+              padding: 10px 5px 20px 5px; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .title {
+                font-family: content-title-font;
+                text-transform: uppercase;
+                font-size: 20px;
+                font-weight: bolder;
+                padding: 15px; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .sub-title {
+                font-family: content-title-font;
+                font-size: 28px;
+                line-height: 1.22em;
+                font-weight: bolder;
+                color: #af0f27; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing {
+                line-height: 67px; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing span.fr {
+                  font-family: content-font-light;
+                  line-height: 2.5em;
+                  vertical-align: bottom; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing .amount span:first-child {
+                  font-family: title-font-bold;
+                  font-size: 25.89px;
+                  line-height: 1em;
+                  font-weight: bolder;
+                  vertical-align: top; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing .amount span:last-child {
+                  font-family: content-title-font;
+                  vertical-align: bottom;
+                  font-size: 61px;
+                  line-height: 1em;
+                  font-weight: bolder; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing .month {
+                  font-family: content-font-light;
+                  line-height: 2.5em;
+                  vertical-align: bottom; }
+            .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content {
+              padding: 25px 0px; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li {
+                margin: 15px auto;
+                max-width: 250px;
+                color: #353535;
+                font-size: 13.5px;
+                padding-left: 2em;
+                padding-right: 2em;
+                vertical-align: middle;
+                line-height: 1.5em; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li img {
+                  float: left;
+                  margin-left: -2em;
+                  margin-right: 15px;
+                  display: inline-block;
+                  opacity: 0;
+                  vertical-align: middle; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li span {
+                  line-height: 2em;
+                  vertical-align: middle; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li:after {
+                  content: '';
+                  clear: both;
+                  display: block; }
+            .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item footer.item-footer button {
+              font-family: content-font-bold;
+              text-transform: uppercase;
+              border: none;
+              font-size: 14px;
+              font-weight: bold;
+              padding: 20px 50px;
+              color: #636363;
+              background-color: #e5f3f6; }
+            .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover {
+              top: -40px;
+              margin-bottom: 5px;
+              border-top: 3px #af0f27 solid;
+              background-color: white;
+              box-shadow: rgba(0, 0, 0, 0.03) 0px 10px 20px 5px; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover header.item-header {
+                padding-bottom: 40px; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover header.item-header .title {
+                  color: #af0f27; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover .item-content {
+                padding-top: 45px; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover .item-content ul li {
+                  text-align: left; }
+                  .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover .item-content ul li img {
+                    opacity: 1;
+                    display: inline-block; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover footer.item-footer button {
+                color: #fefefe;
+                background-color: #af0f27; }
+        @media screen and (max-width: 768px) {
+          .site-wrapper .site-content .content-wrapper section.cloud-hosting {
+            margin-top: 0px !important; }
+            .site-wrapper .site-content .content-wrapper section.cloud-hosting header.cloud-hosting-header {
+              font-size: 35px;
+              margin-bottom: 0px !important; }
+            .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content {
+              padding: 20px 0px 15px 0px;
+              margin-bottom: 50px; }
+              .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item {
+                border: 1px #e4e4e4 solid;
+                border-top: 3px #e5f3f6 solid;
+                padding: 20px 20px;
+                position: relative;
+                top: 0px;
+                margin-bottom: 45px; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header {
+                  border-bottom: solid 1px #ebebeb;
+                  padding: 10px 5px 20px 5px; }
+                  .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header h2.title {
+                    margin-top: 0px !important;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    padding: 15px; }
+                  .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .sub-title {
+                    font-size: 28px;
+                    line-height: 1.22em;
+                    font-weight: bolder;
+                    color: #af0f27; }
+                  .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing {
+                    line-height: 67px; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing span.fr {
+                      line-height: 2.5em;
+                      vertical-align: bottom; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing .amount span:first-child {
+                      font-size: 25.89px;
+                      line-height: 1em;
+                      font-weight: bolder;
+                      vertical-align: top; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing .amount span:last-child {
+                      vertical-align: bottom;
+                      font-size: 61px;
+                      line-height: 1em;
+                      font-weight: bolder; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item header.item-header .pricing .month {
+                      line-height: 2.5em;
+                      vertical-align: bottom; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content {
+                  padding: 25px 0px; }
+                  .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li {
+                    margin: 7px auto;
+                    max-width: 250px;
+                    color: #353535;
+                    font-size: 13.5px;
+                    padding-left: 2.5em;
+                    padding-right: 2.5em;
+                    vertical-align: middle;
+                    line-height: 1.5em; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li img {
+                      float: left;
+                      margin-left: -2em;
+                      margin-right: 15px;
+                      display: inline-block;
+                      opacity: 0;
+                      vertical-align: middle; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li span {
+                      line-height: 2em;
+                      vertical-align: middle; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item .item-content ul li:after {
+                      content: '';
+                      clear: both;
+                      display: block; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item footer.item-footer button {
+                  border: none;
+                  font-size: 14px;
+                  font-weight: bold;
+                  padding: 20px 50px;
+                  color: #353535;
+                  background-color: #e5f3f6; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover header.item-header {
+                  padding-bottom: 40px; }
+                  .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover header.item-header .title {
+                    color: #af0f27; }
+                .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover .item-content {
+                  padding-top: 45px; }
+                  .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover .item-content ul li {
+                    text-align: left; }
+                    .site-wrapper .site-content .content-wrapper section.cloud-hosting .cloud-hosting-content article.cloud-hosting-item:hover .item-content ul li img {
+                      opacity: 1;
+                      display: inline-block; } }
+      .site-wrapper .site-content .content-wrapper section.migrate-existing {
+        margin: 20px auto; }
+        @media only screen and (min-width: 991px) {
+          .site-wrapper .site-content .content-wrapper section.migrate-existing > .row {
+            display: flex; }
+            .site-wrapper .site-content .content-wrapper section.migrate-existing > .row > div:last-child {
+              display: flex; }
+              .site-wrapper .site-content .content-wrapper section.migrate-existing > .row > div:last-child article {
+                margin: auto 10px; } }
+        .site-wrapper .site-content .content-wrapper section.migrate-existing .image-container {
+          position: relative;
+          display: inline-block; }
+          .site-wrapper .site-content .content-wrapper section.migrate-existing .image-container > img {
+            max-width: 100%; }
+          .site-wrapper .site-content .content-wrapper section.migrate-existing .image-container .decoration {
+            width: 100%;
+            height: 100%; }
+            .site-wrapper .site-content .content-wrapper section.migrate-existing .image-container .decoration img {
+              position: absolute; }
+              .site-wrapper .site-content .content-wrapper section.migrate-existing .image-container .decoration img.main-img {
+                bottom: 5px;
+                left: 12%;
+                max-width: 76%; }
+              .site-wrapper .site-content .content-wrapper section.migrate-existing .image-container .decoration img.cloud-img {
+                left: 7%;
+                max-width: 86%;
+                bottom: -10px; }
+              .site-wrapper .site-content .content-wrapper section.migrate-existing .image-container .decoration img.path-line {
+                left: 3.7%;
+                top: 82%;
+                max-width: 177%; }
+        .site-wrapper .site-content .content-wrapper section.migrate-existing article.description-container {
+          max-width: 430px; }
+          .site-wrapper .site-content .content-wrapper section.migrate-existing article.description-container header {
+            font-size: 19px;
+            font-weight: bolder;
+            text-align: left; }
+          .site-wrapper .site-content .content-wrapper section.migrate-existing article.description-container > div {
+            font-size: 15px;
+            text-align: left;
+            line-height: 2em; }
+      .site-wrapper .site-content .content-wrapper section.easy-to-use {
+        margin: 30px auto; }
+        @media only screen and (min-width: 991px) {
+          .site-wrapper .site-content .content-wrapper section.easy-to-use > .row {
+            display: flex; }
+            .site-wrapper .site-content .content-wrapper section.easy-to-use > .row > div:first-child {
+              display: flex; }
+              .site-wrapper .site-content .content-wrapper section.easy-to-use > .row > div:first-child article {
+                margin: auto 10px;
+                margin-left: auto; } }
+        .site-wrapper .site-content .content-wrapper section.easy-to-use .image-container {
+          position: relative;
+          display: inline-block; }
+          .site-wrapper .site-content .content-wrapper section.easy-to-use .image-container > img {
+            max-width: 100%; }
+          .site-wrapper .site-content .content-wrapper section.easy-to-use .image-container .decoration {
+            width: 100%;
+            height: 100%; }
+            .site-wrapper .site-content .content-wrapper section.easy-to-use .image-container .decoration img {
+              position: absolute; }
+              .site-wrapper .site-content .content-wrapper section.easy-to-use .image-container .decoration img.main-img {
+                bottom: -10px;
+                left: 18%;
+                max-width: 70%; }
+              .site-wrapper .site-content .content-wrapper section.easy-to-use .image-container .decoration img.cloud-img {
+                left: 7%;
+                max-width: 86%;
+                bottom: -10px; }
+        .site-wrapper .site-content .content-wrapper section.easy-to-use article.description-container {
+          max-width: 430px; }
+          .site-wrapper .site-content .content-wrapper section.easy-to-use article.description-container header {
+            font-size: 19px;
+            font-weight: bolder;
+            text-align: right; }
+          .site-wrapper .site-content .content-wrapper section.easy-to-use article.description-container > div {
+            font-size: 15px;
+            text-align: right;
+            line-height: 2em; }
+      .site-wrapper .site-content .content-wrapper section.friendly-premium-support {
+        margin: 136px auto; }
+        @media only screen and (min-width: 991px) {
+          .site-wrapper .site-content .content-wrapper section.friendly-premium-support > .row {
+            display: flex; }
+            .site-wrapper .site-content .content-wrapper section.friendly-premium-support > .row > div:last-child {
+              display: flex; }
+              .site-wrapper .site-content .content-wrapper section.friendly-premium-support > .row > div:last-child article {
+                margin: auto 10px; } }
+        .site-wrapper .site-content .content-wrapper section.friendly-premium-support .image-container {
+          position: relative;
+          display: inline-block; }
+          .site-wrapper .site-content .content-wrapper section.friendly-premium-support .image-container > img {
+            max-width: 100%; }
+          .site-wrapper .site-content .content-wrapper section.friendly-premium-support .image-container .decoration {
+            width: 100%;
+            height: 100%; }
+            .site-wrapper .site-content .content-wrapper section.friendly-premium-support .image-container .decoration img {
+              position: absolute; }
+              .site-wrapper .site-content .content-wrapper section.friendly-premium-support .image-container .decoration img.main-img {
+                bottom: 53px;
+                left: 16%;
+                max-width: 76%; }
+              .site-wrapper .site-content .content-wrapper section.friendly-premium-support .image-container .decoration img.cloud-img {
+                left: 7%;
+                max-width: 86%;
+                bottom: -10px; }
+        .site-wrapper .site-content .content-wrapper section.friendly-premium-support article.description-container {
+          max-width: 430px; }
+          .site-wrapper .site-content .content-wrapper section.friendly-premium-support article.description-container header {
+            font-size: 19px;
+            font-weight: bolder;
+            text-align: left; }
+          .site-wrapper .site-content .content-wrapper section.friendly-premium-support article.description-container > div {
+            font-size: 15px;
+            text-align: left;
+            line-height: 2em; }
+      .site-wrapper .site-content .content-wrapper section.scale-your-hosting {
+        margin: 100px auto; }
+        @media only screen and (min-width: 991px) {
+          .site-wrapper .site-content .content-wrapper section.scale-your-hosting > .row {
+            display: flex; }
+            .site-wrapper .site-content .content-wrapper section.scale-your-hosting > .row > div:first-child {
+              display: flex; }
+              .site-wrapper .site-content .content-wrapper section.scale-your-hosting > .row > div:first-child article {
+                margin: auto 10px;
+                margin-left: auto; } }
+        .site-wrapper .site-content .content-wrapper section.scale-your-hosting .image-container {
+          position: relative;
+          display: inline-block; }
+          .site-wrapper .site-content .content-wrapper section.scale-your-hosting .image-container > img {
+            max-width: 100%; }
+          .site-wrapper .site-content .content-wrapper section.scale-your-hosting .image-container .decoration {
+            width: 100%;
+            height: 100%; }
+            .site-wrapper .site-content .content-wrapper section.scale-your-hosting .image-container .decoration img {
+              position: absolute; }
+              .site-wrapper .site-content .content-wrapper section.scale-your-hosting .image-container .decoration img.main-img {
+                bottom: 4px;
+                left: 13%;
+                max-width: 76%; }
+              .site-wrapper .site-content .content-wrapper section.scale-your-hosting .image-container .decoration img.cloud-img {
+                left: 7%;
+                max-width: 86%;
+                bottom: -10px; }
+        .site-wrapper .site-content .content-wrapper section.scale-your-hosting article.description-container {
+          max-width: 430px; }
+          .site-wrapper .site-content .content-wrapper section.scale-your-hosting article.description-container header {
+            font-size: 19px;
+            font-weight: bolder;
+            text-align: right; }
+          .site-wrapper .site-content .content-wrapper section.scale-your-hosting article.description-container > div {
+            font-size: 15px;
+            text-align: right;
+            line-height: 2em; }
+      .site-wrapper .site-content .content-wrapper section.frequently-asked-questions {
+        margin: 70px auto;
+        padding: 20px 20px;
+        margin-bottom: 250px; }
+        @media only screen and (min-width: 580px) {
+          .site-wrapper .site-content .content-wrapper section.frequently-asked-questions {
+            margin-bottom: 250px !important; } }
+        .site-wrapper .site-content .content-wrapper section.frequently-asked-questions > header {
+          font-family: title-font;
+          font-size: 48px;
+          font-weight: bolder;
+          text-transform: uppercase;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 70px; }
+        .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper {
+          margin-bottom: 15px; }
+          .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'] {
+            display: block;
+            text-align: left;
+            font-size: 18px;
+            line-height: 58px;
+            padding: 15px 5px 15px 30px;
+            border: 2px solid transparent;
+            border-left: 2px solid #af0f27;
+            border-radius: 0px;
+            background-color: #f5f5f5;
+            white-space: normal; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'] img.question-circle {
+              width: 30px;
+              margin-right: 20px; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'] > i.glyphicon {
+              padding: 20px 30px 20px 40px;
+              float: right;
+              border-left: 1px solid #e7e6ec; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'][aria-expanded="false"] > i.glyphicon.glyphicon-triangle-top {
+              display: none; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'][aria-expanded="true"] {
+              border-color: #e7e6ec #e7e6ec #e7e6ec #af0f27; }
+              .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'][aria-expanded="true"] > i.glyphicon.glyphicon-triangle-bottom {
+                display: none; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse']:hover {
+              border-color: #e7e6ec #e7e6ec #e7e6ec #af0f27; }
+          .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapse, .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapsing {
+            box-sizing: border-box; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapse .card.card-body, .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapsing .card.card-body {
+              padding: 30px 93px;
+              font-size: 15px;
+              text-align: left; }
+        @media screen and (max-width: 768px) {
+          .site-wrapper .site-content .content-wrapper section.frequently-asked-questions > header {
+            font-size: 28px; }
+          .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper {
+            margin-bottom: 15px; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'] {
+              font-size: 15px;
+              line-height: 1.5em;
+              padding: 7px 5px 7px 30px; }
+              .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'] img.question-circle {
+                width: 25px; }
+              .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper a.btn.btn-default[data-toggle='collapse'] > i.glyphicon {
+                padding: 7px 15px; }
+            .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapse, .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapsing {
+              box-sizing: border-box; }
+              .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapse .card.card-body, .site-wrapper .site-content .content-wrapper section.frequently-asked-questions .collapse-wrapper > .collapsing .card.card-body {
+                padding: 10px 30px;
+                font-size: 15px;
+                text-align: left; } }
+      .site-wrapper .site-content .content-wrapper section.how-would-you-like {
+        margin: 20px auto;
+        padding: 20px 0px; }
+        .site-wrapper .site-content .content-wrapper section.how-would-you-like header {
+          font-size: 35px;
+          font-weight: bolder;
+          padding: 20px 5px;
+          font-family: content-title-font;
+          text-transform: uppercase; }
+        .site-wrapper .site-content .content-wrapper section.how-would-you-like .section-body {
+          padding: 20px 20px;
+          max-width: 1110px;
+          margin: 0px auto;
+          font-size: 22px; }
+        .site-wrapper .site-content .content-wrapper section.how-would-you-like footer {
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 20px 5px; }
+          .site-wrapper .site-content .content-wrapper section.how-would-you-like footer > br {
+            display: none; }
+            @media only screen and (max-width: 580px) {
+              .site-wrapper .site-content .content-wrapper section.how-would-you-like footer > br {
+                display: block; } }
+          .site-wrapper .site-content .content-wrapper section.how-would-you-like footer button {
+            border: none;
+            text-transform: uppercase;
+            padding: 20px 50px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: content-font-bold; }
+            .site-wrapper .site-content .content-wrapper section.how-would-you-like footer button.btn-buy-cloud {
+              background-color: #af0f27;
+              color: #fefefe; }
+            .site-wrapper .site-content .content-wrapper section.how-would-you-like footer button.btn-enquire {
+              background-color: #353535;
+              color: #fefefe;
+              position: relative;
+              padding: 20px 90px; }
+              .site-wrapper .site-content .content-wrapper section.how-would-you-like footer button.btn-enquire aside {
+                text-transform: capitalize;
+                font-size: 10px;
+                position: absolute;
+                left: 0px;
+                top: 100%;
+                width: 100%;
+                padding: 5px 50px;
+                color: #353535; }
+        @media only screen and (max-width: 768px) {
+          .site-wrapper .site-content .content-wrapper section.how-would-you-like header {
+            font-size: 28px !important; }
+          .site-wrapper .site-content .content-wrapper section.how-would-you-like .section-body {
+            font-size: 20px; } }
+      .site-wrapper .site-content .content-wrapper > section {
+        position: relative;
+        z-index: 3;
+        padding-left: 20px;
+        padding-right: 20px; }
+        .site-wrapper .site-content .content-wrapper > section article.description-container header {
+          text-transform: uppercase;
+          font-family: content-title-font;
+          margin-bottom: 25px; }
+        @media only screen and (max-width: 991px) {
+          .site-wrapper .site-content .content-wrapper > section {
+            margin: 30px auto !important; }
+            .site-wrapper .site-content .content-wrapper > section article.description-container {
+              max-width: 500px !important;
+              margin: 20px auto; }
+              .site-wrapper .site-content .content-wrapper > section article.description-container header {
+                text-align: center !important; }
+              .site-wrapper .site-content .content-wrapper > section article.description-container > div {
+                text-align: center !important; } }
+    .site-wrapper .site-content > .background-decoration {
+      overflow: hidden; }
+      .site-wrapper .site-content > .background-decoration img {
+        position: absolute;
+        z-index: 2;
+        bottom: 10px; }
+        .site-wrapper .site-content > .background-decoration img.bg-top-left1 {
+          left: -240px;
+          top: 112px; }
+        .site-wrapper .site-content > .background-decoration img.bg-top-left2 {
+          left: 80px;
+          top: 500px; }
+        .site-wrapper .site-content > .background-decoration img.bg-top-right {
+          top: 130px;
+          right: 250px; }
+        .site-wrapper .site-content > .background-decoration img.bg-bottom-left {
+          left: -180px;
+          bottom: 150px; }
+        .site-wrapper .site-content > .background-decoration img.bg-bottom-right1 {
+          right: 240px;
+          bottom: 280px; }
+        .site-wrapper .site-content > .background-decoration img.bg-bottom-right2 {
+          right: -300px;
+          bottom: 20px; }
+        .site-wrapper .site-content > .background-decoration img.bottom-bg {
+          left: calc((100vw - 1920px)/2);
+          bottom: 0px;
+          min-width: calc(100% + 100vw - 1920px);
+          z-index: 1; }
+  .site-wrapper > footer {
+    background-image: url("../images/footer-bg.png");
+    background-position: top center;
+    z-index: 1; }
+
+.custom-red-color {
+  color: #af0f27; }
+
+* {
+  transition: all 0.4s; }
+
+@media only screen and (min-width: 991px) {
+  .display-on-mobile {
+    display: none; } }
+
+@media only screen and (max-width: 991px) {
+  .hide-on-mobile {
+    display: none; } }
+
+.productImage {
+  max-width: 300px;
+}
+
+.your-class {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

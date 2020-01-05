@@ -1,0 +1,23 @@
+{% extends '/_layout/layout.twig' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url('/css/contact-us.css') }}"/>
+{% endblock %}
+
+{% block content %}
+  <div class="vesti">
+    {% set query = craft.entries()
+      .section('vesti') %}
+    {% for input in query %}
+      <h2>{{ input.title }} <span class="datum">- {{ input.postDate | date("M d, Y") }}</span></h2>
+      <p> {{ input.description }}</p>
+      {% if input.productImage | length %}
+        <img href="{{ input.productImage.one.getUrl()}}">
+      {% endif %}
+      {% for link in input.fajlovi.all() %}
+        <a class="row" href="{{link.getUrl}}" download="">{{ link }} - (download)</a>
+      {% endfor %}
+    {% endfor %}
+    {% include '/_includes/matrixBlocks.twig' %}
+  </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% if block.products %}
+  <section class="cloud-hosting">
+
+    <div class="cloud-hosting-content">
+      <div class="row">
+        <header class="cloud-hosting-header">
+          {{ block.headline | striptags('<br><span><em><li><ul><strong>') | raw  }}
+        </header>
+        {% set query = craft.entries()
+        .section(block.filter) %}
+        {% for input in query %}
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <article class="cloud-hosting-item">
+              <header class="item-header">
+                <h2 class="title">{{ input.title }}</h2>
+                <div class="pricing">
+                  <span class="fr">Od</span>
+                  <span class="amount">
+                  <span>€</span>
+                    <span class="custom-red-color">{{ input.price }}</span>
+                  </span>
+                </div>
+              </header>
+              {% if input.productImage | length %}
+              <div class="item-content">
+                <img class="productImage" src="{{ input.productImage.one().getUrl() }}">
+              </div>
+              {% endif %}
+              <footer class="item-footer">
+                <a href="{{ input.url }}">
+                  <button>VIDI JOŠ</button>
+                </a>
+              </footer>
+            </article>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}

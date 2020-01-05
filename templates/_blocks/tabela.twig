@@ -1,0 +1,65 @@
+<div class="tabela">
+  <table class="table table-striped">
+    <thead>
+    <td scope="col">Tip</td>
+    <td scope="col">Radni zahvat</td>
+    <td scope="col">Težina</td>
+    <td scope="col">Potrebna snaga</td>
+    <td scope="col"> CENA SA PDV-om</td>
+    </thead>
+    <tbody>
+    {% for input in block.vrsta.all() %}
+      <tr>
+        <td>{{ input.tip }}</td>
+        <td>{{ input.radniZahvat }} m</td>
+        <td>{{ input.tezina }} kg</td>
+        <td>{{ input.potrebnaSnaga }} KS</td>
+        <td>{{ input.cena }} €</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .body {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    padding: 1rem;
+  }
+
+  .image {
+    width: 50%;
+    height: 50%;
+    padding-right: 1rem;
+    padding-top: 1rem;
+  }
+
+  .naslov {
+    margin: auto;
+    padding: 1rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  h3 {
+    border-bottom: 3px green solid;
+    width: 60%;
+  }
+
+  table {
+    border: 1px black solid
+  }
+
+  .tabela {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+    padding: 1rem;
+  }
+</style>

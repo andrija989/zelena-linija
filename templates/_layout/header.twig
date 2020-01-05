@@ -1,0 +1,111 @@
+<header>
+  <div class="header_bg">
+  </div>
+  {% set bottomLogo = company.logo.one() %}
+  {% if bottomLogo %}
+    <div class="logo_cont pull-left">
+      <a href="/">
+        <img class="logo" src="{{ bottomLogo.getUrl() }}">
+      </a>
+    </div>
+  {% endif %}
+  <div class="phone_cont pull-left">
+    <a style="color: black" href="tel:{{ company.phoneNumber }}">
+      <span class="phone_num">{{ company.phoneNumber }}</span>
+    </a>
+  </div>
+  <div class="menu_cont pull-right">
+    <span class="menu_title" style="color:green">Meni</span>
+    <a class="menu_button">
+      <img class="" src="{{ url('/images/menu_button.png') }}">
+    </a>
+  </div>
+   <div class="menu_wrapper" style="background-color:green">
+    <div class="menu-header">
+      <div class="logo_cont pull-left">
+        <a href="/"><img class="logo" src="{{ company.logoWhite.one.getUrl() }}"></a>
+      </div>
+      <div class="phone_cont pull-left">
+        <a href="tel:{{ company.phoneNumber }}">
+          <span style="font-size: 60px" class="phone_num">{{ company.phoneNumber }}</span>
+        </a>
+      </div>
+      <div class="menu_cont pull-right">
+        <a class="dismiss_button">
+          <img class="" src="{{ url('/images/dismiss.png') }}">
+        </a>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="menu-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="white_bar"></div>
+            <div class="menu-item">
+              <ul>
+                {% set MenuNodes=craft.Navigation.getRawNav('Menu') %}
+                {% if MenuNodes is defined  %}
+                  {% for MenuNode in MenuNodes %}
+                    <li>
+                      <a href="{% if craft.entries.id(MenuNode.NodeId).one().uri is defined %} {{craft.entries.id(MenuNode.NodeId).one().getUrl()}}{% else %}{{ MenuNode.menuUrl }}  {% endif %}">
+                        {{ MenuNode.NodeName }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              </ul>
+            </div>
+            <div class="menu-contact">
+              <div class="menu-contact-item">
+                <br><br>
+                <ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="white_bar"></div>
+            <div class="menu-contact">
+              <div class="menu-contact-item">
+                <h4 style="color:#353535">Adresa</h4>
+                <ul>
+                  <li>{{ company.adress }}</li>
+                </ul>
+                <h4 style="color:#353535">Izložbeni prostor</h4>
+                <ul>
+                  <li>Vuka Karadžića bb</li>
+                  <li>21460</li>
+                  <li>Dolazak po pozivu</li>
+                </ul>
+              </div>
+              <div class="menu-contact-item">
+                <h4 style="color:#353535">Kontakti</h4>
+                <ul>
+                  <li>
+                    <a href="mailto:{{ company.email }}">{{ company.email }}</a>
+                  </li>
+                  <li class="phone-number">
+                    <a href="tel:063567828">
+                      <a href="tel:{{ company.phoneNumber }}">
+                        <span>{{ company.phoneNumber }}</span>
+                      </a>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu-contact-item">
+                {% include '/_includes/socialMedia.twig' %}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="menu-bg">
+      </div>
+    </div>
+  </div>
+</header>

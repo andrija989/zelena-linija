@@ -1,0 +1,36 @@
+{% extends '/_layout/layout.twig' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url('/css/home.css') }}"/>
+  <link rel="stylesheet" href="{{ url('/css/home-head.css') }}"/>
+{% endblock %}
+
+{% block content %}
+  <div class="site-content">
+    <div class="background-decoration">
+    </div>
+    <div class="content-wrapper">
+      <section class="hero">
+        <div class="section-content">
+          <div class="logo-wrapper hide-on-mobile">
+            <img src="/images/home/hero/logo.png">
+          </div>
+          <h1>11 godina sa Vama</h1>
+          <aside></aside>
+          <div class="btn-wrapper">
+            <a href="/mehanizacija" class="btn btn-default" style="background-color:green">Priključna mehanizacija</a>
+          </div>
+        </div>
+        <div class="section-decoration">
+          <img class="supermane" src="/images/home/hero/tractor.png">
+        </div>
+      </section>
+      <section class="attractive-engaging">
+
+      </section>
+    </div>
+  </div>
+  <div class="site-content">
+    {% include '/_includes/matrixBlocks.twig' %}
+  </div>
+{% endblock %}

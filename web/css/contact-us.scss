@@ -1,0 +1,630 @@
+
+$custom-red-color: #af0f27;
+$content-color: #353535;
+$transition-duration: .4s;
+$content-title-size: 19px;
+$content-body-size: 15px;
+
+@font-face {
+    font-family: title-font;
+    src: url('../fonts/TitilliumWeb/TitilliumWeb-Black.ttf');
+}
+@font-face {
+    font-family: title-font-bold;
+    src: url('../fonts/TitilliumWeb/TitilliumWeb-Bold.ttf');
+}
+@font-face {
+    font-family: content-title-font;
+    src: url('../fonts/Montserrat/MONTSERRAT-BLACK.TTF');
+}
+@font-face {
+    font-family: content-font;
+    src: url('../fonts/Montserrat/MONTSERRAT-REGULAR.TTF');
+}
+@font-face {
+    font-family: content-font-bold;
+    src: url('../fonts/Montserrat/MONTSERRAT-BOLD.TTF');
+}
+@font-face {
+    font-family: content-font-light;
+    src: url('../fonts/Montserrat/MONTSERRAT-LIGHT.TTF');
+}
+
+body{
+    background-color: white;
+}
+.site-wrapper{
+    background-color: white;
+    background-image: url("../images/sun-beam.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: content-font;
+    &>header{
+        *{
+            transition: all ease-in-out .4s;
+        }
+        position: relative;
+        z-index: 30;
+    }
+    .site-content{
+        background-color: transparent;
+        position: relative;
+        padding: 0px 0px 0px 0px;
+        overflow: hidden;
+        width: 100%;
+        margin-top: -40px;
+        .content-wrapper{
+            margin: 0px auto;
+            text-align: center;
+            padding: 10px 0px 0px;
+            section.contact-us{
+                z-index: 21;
+                .section-content{
+                    max-width: 1250px;
+                    margin: 0px auto;
+                    padding: 0px 15px;
+                    z-index: 20;
+                    .title-wrapper{
+                        margin-bottom: 115px;
+                        >h2{
+                            font-family: title-font;
+                            font-size: 48px;
+                            text-transform: uppercase;
+                            margin-bottom: 50px;
+                        }
+                        >p{
+                            font-family: content-font;
+                            font-size: 16px;
+                            line-height: 2;
+                            max-width: 830px;
+                            margin: 0px auto;
+                            margin-top: 0px;
+                        }
+                        .superman-wrapper{
+                            padding-right: 50px;
+                            text-align: right;
+                            .superman{
+                                display: none;
+                                @media only screen and (max-width: 1265px) {
+                                    display: inline;
+                                }
+                            }
+                        }
+                        @media only screen and (max-width: 1265px) {
+                            margin-bottom: 50px;
+                        }
+                    }
+                    .contact-details-wrapper{
+                        text-align: left;
+                        .contact-info{
+                            aside{
+                                padding-left: 40px;
+                                position: relative;
+                                text-transform: uppercase;
+                                font-family: content-title-font;
+                                font-size: 20px;
+                                color: $custom-red-color;
+                                margin-bottom: 45px;
+                                &:before{
+                                    position: absolute;
+                                    height: 1px;
+                                    width: 25px;
+                                    background-color: $custom-red-color;
+                                    top: 50%;
+                                    left: 0px;
+                                    content: '';
+                                    display: block;
+                                }
+                            }
+                            .address-wrapper{
+                                margin-bottom: 55px;
+                                label{
+                                    font-family: content-title-font;
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                }
+                                p{
+                                    font-family: content-font;
+                                    font-size: 17px;
+                                    white-space: pre-line;
+                                }
+                            }
+                            .contact-wrapper{
+                                label{
+                                    font-family: content-title-font;
+                                    font-size: 18px;
+                                    text-transform: uppercase;
+                                }
+                                .email{
+                                    font-family: content-font;
+                                    font-size: 17px;
+                                }
+                                .phone-number{
+                                    font-family: content-font-bold;
+                                    color: $custom-red-color;
+                                    margin-bottom: 15px;
+                                }
+                                .social-icons{
+                                    text-align: left;
+                                    >a{
+                                        display: inline-block;
+                                        width: 41px;
+                                        height: 41px;
+                                        padding: 0px;
+                                        border-radius: 50%;
+                                        background-color: #d1e2e6;
+                                        line-height: 40px;
+                                        text-align: center;
+                                        i{
+                                            vertical-align: middle;
+                                        }
+                                        &:hover{
+                                            background-color: $custom-red-color;
+                                            i{
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .contact-form{
+                            .input-wrapper{
+                                margin-bottom: 25px;
+                                label{
+                                    display: block;
+                                    margin-bottom: 10px;
+                                    font-family: content-font;
+                                    font-size: 16px;
+                                    color: #4a4a4a;
+                                    &:after{
+                                        content: '*';
+                                        display: inline-block;
+                                        vertical-align: top;
+                                        color: $custom-red-color;
+                                        position: relative;
+                                        left: 5px;
+                                    }
+                                }
+                                input, select, textarea{
+                                    display: block;
+                                    width: 100%;
+                                    box-sizing: border-box;
+                                    border: 1px solid #dbdbdb;
+                                    background-color: #fafafa;
+                                    padding: 25px;
+                                    color: white;
+                                    &::placeholder{
+                                        font-family: content-font-light;
+                                        color: #aeaeae;
+                                    }
+                                    &:focus{
+                                        background-color: $custom-red-color;
+                                        color: white;
+                                        &::placeholder{
+                                            color: white;
+                                        }
+                                    }
+                                    resize: vertical;
+                                }
+                                select{
+                                    color: #aeaeae;
+                                    position: relative;
+                                }
+                            }
+                            .btn-wrapper{
+                                text-align: right;
+                                margin-top: -15px;
+                                button{
+                                    background-color: $custom-red-color;
+                                    color: white;
+                                    border: none;
+                                    text-transform: uppercase;
+                                    padding: 20px 50px;
+                                    margin-bottom: 10px;
+                                    margin-top: 10px;
+                                    font-family: content-font-bold;
+                                }
+                            }
+                        }
+                    }
+                }
+                .section-decoration{
+                    .cloud1{
+                        top: 42px;
+                        left: -240px;
+                    }
+                    .cloud2{
+                        left: calc(100% * 122 / 1920);
+                        top: 420px;
+                    }
+                    .cloud3{
+                        top: 50px;
+                        right: calc(100% * 250 / 1920);
+                    }
+                    .rock{
+                        left: 0px;
+                        bottom: 0px;
+                    }
+                    .rock-cloud{
+                        left: -100px;
+                        bottom: 40px;
+                    }
+                    .superman{
+                        top: 250px;
+                        right: calc(100% * 75 / 1920);
+                        @media only screen and (max-width: 1650px){
+                            top: 150px;
+                        }
+                        @media only screen and (max-width: 1265px){
+                            display: none;
+                        }
+                    }
+                    @media only screen and (max-width: 1350px) {
+                        .superman{
+                            top: calc(1000px - 70vw + 72px);
+                        }
+                        .cloud4{
+                            top: calc(1000px - 70vw + 320px);
+                        }
+                    }
+                }
+                @media only screen and (max-width: 768px) {
+                    .section-content{
+                        .title-wrapper{
+                            margin-bottom: 30px;
+                            >h2{
+                                font-size: 35px;
+                                margin-bottom: 20px;
+                            }
+                            p{
+                                font-size: 15px;
+                                line-height: 1.8;
+                                margin-bottom: 20px;
+                            }
+                        }
+                        .contact-details-wrapper{
+                            text-align: center;
+                            .contact-info{
+                                margin-bottom: 40px;
+                                aside{
+                                    padding-left: 0px;
+                                    position: relative;
+                                    text-transform: uppercase;
+                                    font-family: content-title-font;
+                                    font-size: 20px;
+                                    color: $custom-red-color;
+                                    margin-bottom: 30px;
+                                    &:before{
+                                        position: relative;
+                                        height: 1px;
+                                        width: 25px;
+                                        background-color: $custom-red-color;
+                                        left: -10px;
+                                        bottom: 6px;
+                                        content: '';
+                                        display: inline-block;
+                                    }
+                                }
+                                .address-wrapper{
+                                    margin-bottom: 25px;
+                                    label{
+                                        font-family: content-title-font;
+                                        font-size: 18px;
+                                        text-transform: uppercase;
+                                    }
+                                    p{
+                                        font-family: content-font;
+                                        font-size: 17px;
+                                        white-space: pre-line;
+                                    }
+                                }
+                                .contact-wrapper{
+                                    label{
+                                        font-family: content-title-font;
+                                        font-size: 18px;
+                                        text-transform: uppercase;
+                                    }
+                                    .email{
+                                        font-family: content-font;
+                                        font-size: 17px;
+                                    }
+                                    .phone-number{
+                                        font-family: content-font-bold;
+                                        color: $custom-red-color;
+                                        margin-bottom: 15px;
+                                    }
+                                    .social-icons{
+                                        text-align: center;
+                                        >a{
+                                            display: inline-block;
+                                            width: 41px;
+                                            height: 41px;
+                                            padding: 0px;
+                                            border-radius: 50%;
+                                            background-color: #d1e2e6;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            i{
+                                                vertical-align: middle;
+                                            }
+                                            &:hover{
+                                                background-color: $custom-red-color;
+                                                i{
+                                                    color: white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .contact-form{
+                                .input-wrapper{
+                                    margin-bottom: 20px;
+                                    label{
+                                        display: block;
+                                        margin-bottom: 7px;
+                                        font-family: content-font;
+                                        font-size: 15px;
+                                        color: #4a4a4a;
+                                        &:after{
+                                            content: '*';
+                                            display: inline-block;
+                                            vertical-align: top;
+                                            color: $custom-red-color;
+                                            position: relative;
+                                            left: 5px;
+                                        }
+                                    }
+                                    input, select, textarea{
+                                        display: block;
+                                        width: 100%;
+                                        box-sizing: border-box;
+                                        border: 1px solid #dbdbdb;
+                                        background-color: #fafafa;
+                                        padding: 20px;
+                                        color: white;
+                                        &::placeholder{
+                                            font-family: content-font-light;
+                                            color: #aeaeae;
+                                        }
+                                        &:focus{
+                                            background-color: $custom-red-color;
+                                            color: white;
+                                            &::placeholder{
+                                                color: white;
+                                            }
+                                        }
+                                        resize: vertical;
+                                    }
+                                    select{
+                                        color: #aeaeae;
+                                        position: relative;
+                                    }
+                                }
+                                .btn-wrapper{
+                                    text-align: right;
+                                    margin-top: -15px;
+                                    button{
+                                        background-color: $custom-red-color;
+                                        color: white;
+                                        border: none;
+                                        text-transform: uppercase;
+                                        padding: 20px 50px;
+                                        margin-bottom: 10px;
+                                        margin-top: 10px;
+                                        font-family: content-font-bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .section-decoration{
+                        .superman{
+                            top: calc(780px - 70vw + 72px);
+                        }
+                        .cloud4{
+                            top: calc(780px - 70vw + 320px);
+                        }
+                    }
+                }
+            }
+            section.map-wrapper{
+                position: relative;
+                .map-over-bg{
+                    position: absolute;
+                    z-index: 1;
+                    left: 0px;
+                    top: 0px;
+                    background-image: url("../images/contact-us/map-over-bg.png");
+                    background-size: cover;
+                    background-position: top center;
+                    background-repeat: no-repeat;
+                    img{
+                        width: 100%;
+                        opacity: 0;
+                    }
+                }
+                #map{
+                    margin: 0;
+                    padding: 0;
+                    height: 680px;
+                    max-width: none;
+                    img {
+                        max-width: none !important;
+                    }
+                    .gm-style-iw {
+                        width: 350px !important;
+                        top: 15px !important;
+                        left: 0px !important;
+                        background-color: $custom-red-color;
+                        box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+                        border-radius: 0px;
+                        padding-left: 0;
+                        & + div{
+                            display: none;
+                        }
+                        & ~ div:first-child{
+                            display: none;
+                        }
+                    }
+                    .gm-style .gm-style-iw-t {
+                        bottom: 57px !important;
+                    }
+                    .gm-style .gm-style-iw-t::after {
+                        top: auto;
+                        bottom: -30px;
+                    }
+                    .gm-style-iw-d {
+                        overflow: visible !important;
+                    }
+                    .poi-info-window .full-width {
+                        width: auto;
+                    }
+                    .poi-info-window div, .poi-info-window a {
+                        color: #fff;
+                        background: transparent;
+                    }
+                    .poi-info-window a {
+                        display: block;
+                        background: lighten($custom-red-color, 10%);
+                        text-decoration: none;
+                        padding: 8px 12px;
+                        margin-top: 10px;
+                        &:hover {
+                            background-color: $custom-red-color;
+                        }
+                    }
+                    #iw-container {
+                        margin-bottom: 10px;
+                        .iw-title {
+                            text-align: left;
+                            font-family: 'Open Sans Condensed', sans-serif;
+                            font-size: 22px;
+                            font-weight: 400;
+                            padding: 20px 0px 0px 0px;
+                            background-color: transparent;
+                            color: white;
+                            margin: 0;
+                            border-radius: 2px 2px 0 0;
+                        }
+                        .iw-content {
+                            text-align: left;
+                            color: white;
+                            font-size: 13px;
+                            line-height: 18px;
+                            font-weight: 400;
+                            margin-right: 1px;
+                            padding: 10px 5px 20px 0px;
+                            max-height: none;
+                            overflow-x: hidden;
+                            img {
+                                float: right;
+                                margin: 0 5px 5px 10px;
+                            }
+                        }
+                    }
+                    .iw-subTitle {
+                        font-size: 16px;
+                        font-weight: 700;
+                        padding: 5px 0;
+                    }
+                    .iw-bottom-gradient {
+                        position: absolute;
+                        width: 326px;
+                        height: 25px;
+                        bottom: 10px;
+                        right: 18px;
+                        background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+                        background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+                        background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+                        background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+                    }
+                }
+            }
+            & > section{
+                position: relative;
+                .section-content{
+                    position: relative;
+                    max-width: 1350px;
+                    padding: 0px 15px;
+                    margin: 0px auto;
+                }
+                .section-decoration{
+                    >*{
+                        position: absolute;
+                    }
+                }
+            }
+        }
+        & > .background-decoration{
+            overflow: hidden;
+            img{
+                position: absolute;
+                z-index: 2;
+                bottom: 10px;
+            }
+        }
+    }
+    & > footer{
+        background-image: url("../images/footer-bg.png");
+        background-position: top center;
+        z-index: 1;
+    }
+}
+
+.custom-red-color{
+    color: $custom-red-color;
+}
+.display-on-mobile{
+    @media only screen and (min-width: 991px) {
+        display: none;
+    }
+}
+.hide-on-mobile{
+    @media only screen and (max-width: 991px) {
+        display: none;
+    }
+}
+
+
+@mixin make-col-style($col-prefix, $total-col-count){
+    @for $i from 0 through $total-col-count {
+        .#{$col-prefix}-#{$i}{
+            width: calc(100% * #{$i} / #{$total-col-count});
+        }
+    }
+}
+
+.c-row{
+    margin: 0px -8px;
+    display: block;
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    &:before{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    & > [class^='c-col-']{
+        display: block;
+        padding: 0px 8px;
+        float: left;
+    }
+    @media only screen and (min-width: 1200px) {
+        @include make-col-style('c-col-lg', 60);
+    }
+    @media only screen and (min-width: 992px) and (max-width: 1200px){
+        @include make-col-style('c-col-md', 60);
+    }
+    @media only screen and (min-width: 768px) and (max-width: 992px){
+        @include make-col-style('c-col-sm', 60);
+    }
+    @media only screen and (max-width: 768px){
+        @include make-col-style('c-col-xs', 60);
+    }
+}

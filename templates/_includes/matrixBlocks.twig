@@ -1,0 +1,5 @@
+<div class="content-wrapper">
+  {% for block in entry.contentBlocks.all %}
+    {% include '/_blocks/' ~ block.type ignore missing %}
+  {% endfor %}
+</div>

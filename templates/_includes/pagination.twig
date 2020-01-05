@@ -1,0 +1,20 @@
+{% if pageInfo.prevUrl %}
+  <div class="load-more-project">
+    <a href="{{ pageInfo.prevUrl }}">
+      <button style="background-color: #b31330;
+          padding: 15px";>Previous Page</button>
+    </a>
+  </div>
+{% endif %}
+{% if pageInfo.nextUrl %}
+  <div class="load-more-project">
+    <a href="{{ pageInfo.nextUrl }}">
+      <button style="background-color: #b31330;
+        padding: 15px";>Next page</button>
+    </a>
+  </div>
+  <div>
+    <h2 style="color: #353535;
+      font-size: 15px;">Page {{ pageInfo.currentPage }} out of {{ pageInfo.totalPages }}</h2>
+  </div>
+{% endif %}

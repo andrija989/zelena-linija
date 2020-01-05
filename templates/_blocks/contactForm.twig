@@ -1,0 +1,56 @@
+<section class="contact-us">
+  <div class="section-content">
+    <div class="title-wrapper">
+      <h2>
+        {{ block.headline | striptags('<br><span><em><li><ul><strong>') | raw }}
+        <span class="custom-red-color"></span>
+      </h2>
+      <p>{{ block.paragraph }}</p>
+    </div>
+    {% if craft.app.session.hasFlash('notice') %}
+      <h1 style="color: #af0f27" class="message notice">
+        {{ craft.app.session.getFlash('notice') }}
+      </h1>
+    {% elseif craft.app.session.hasFlash('error') %}
+      <h1 style="color: #af0f27" class="message error">
+        {{ craft.app.session.getFlash('error') }}
+      </h1>
+    {% endif %}
+    <div class="contact-details-wrapper">
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <div class="contact-info">
+            <aside>Kontakt informacije:</aside>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                <div class="address-wrapper">
+                  <label>adresa:</label>
+                  <p>{{ company.adress }}</p>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-6 col-xs-12">
+                <div class="contact-wrapper">
+                  <label>kontakt:</label>
+                  <div class="email">
+                    <a style="color: #353535" href="mailto:{{ company.email }}">
+                      {{ company.email}}
+                    </a>
+                  </div>
+                  <div class="phone-number">
+                    <a style="color: #af0f27" href="tel:{{ company.phoneNumber }}">
+                      {{ company.phoneNumber }}
+                    </a>
+                  </div>
+                  <div class="social-icons">
+                    {% include '/_includes/socialMedia.twig' %}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% include '/_includes/form.twig' %}
+      </div>
+    </div>
+  </div>
+</section>

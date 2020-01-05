@@ -1,0 +1,17 @@
+<div class="social-icons">
+  {% if company.facebookLink %}
+    <a href="{{ company.facebookLink.url }}" >
+      <i class="fa fa-facebook"></i>
+    </a>
+  {% endif %}
+  {% if company.twitterLink %}
+    <a href="{{ company.twitterLink.url }}" class="">
+      <i class="fa fa-twitter"></i>
+    </a>
+  {% endif %}
+  {% if company.linkedinLink %}
+    <a href="{{ company.linkedinLink.url }}" class="" >
+      <i class="fa fa-linkedin"></i>
+    </a>
+  {% endif %}
+</div>

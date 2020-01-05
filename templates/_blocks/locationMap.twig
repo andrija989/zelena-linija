@@ -1,0 +1,17 @@
+<section class="map-wrapper">
+  <div class="map-over-bg">
+    <img src="{{ url('/images/contact-us/map-over-bg.png') }}" />
+  </div>
+  <div id="map"></div>
+</section>
+{% js %}
+  {% if false %}<script>{% endif %}
+    function initMap() {
+      var so53 = {lat: {{ block.latitude }}, lng: {{ block.longitude}}};
+      var map = new google.maps.Map(document.getElementById('map'), {zoom:16, center: so53});
+      var marker = new google.maps.Marker({position: so53, map: map});
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW2GFZGxqAdTRs8XtehuNA8l4L8rCURTk&callback=initMap">
+    {% if false %}</script>{% endif %}
+{% endjs %}
