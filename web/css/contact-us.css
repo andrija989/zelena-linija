@@ -34,7 +34,7 @@ body {
 
 .site-wrapper {
   background-color: white;
-  background-image: url("../images/sun-beam.png");
+  background-image: url("../images/bg.png");
   background-position: top center;
   background-repeat: no-repeat;
   font-family: content-font;
@@ -1485,5 +1485,9 @@ h2 {
 }
 
 .datum {
-  font-size: 20px;
+  font-size: 16px;
+}
+
+.single-news {
+  padding-top: 50px;
 }

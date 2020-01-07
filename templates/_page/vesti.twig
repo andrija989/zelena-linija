@@ -9,14 +9,17 @@
     {% set query = craft.entries()
       .section('vesti') %}
     {% for input in query %}
-      <h2>{{ input.title }} <span class="datum">- {{ input.postDate | date("M d, Y") }}</span></h2>
-      <p> {{ input.description }}</p>
-      {% if input.productImage | length %}
-        <img href="{{ input.productImage.one.getUrl()}}">
-      {% endif %}
-      {% for link in input.fajlovi.all() %}
-        <a class="row" href="{{link.getUrl}}" download="">{{ link }} - (download)</a>
-      {% endfor %}
+      <div class="single-news">
+        <img class="slika" src="{{url('/images/calendar.png')}}"><span class="datum"> {{ input.postDate | date("M d, Y") }}</span>
+        <h2>{{ input.title }}</h2>
+        <p> {{ input.description }}</p>
+        {% if input.productImage | length %}
+          <img href="{{ input.productImage.one.getUrl()}}">
+        {% endif %}
+        {% for link in input.fajlovi.all() %}
+          <a class="row download" href="{{link.getUrl}}" download="">{{ link }} - (download)</a>
+        {% endfor %}
+      </div>
     {% endfor %}
     {% include '/_includes/matrixBlocks.twig' %}
   </div>

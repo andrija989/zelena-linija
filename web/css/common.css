@@ -35,8 +35,12 @@ body {
 }
 
 body a {
-  color: blue;
+  color: white;
   cursor: pointer;
+}
+
+.download {
+  color: blue;
 }
 
 body .btn-white {
